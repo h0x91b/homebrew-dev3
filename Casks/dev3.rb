@@ -8,7 +8,7 @@ cask "dev3" do
   homepage "https://h0x91b.github.io/dev-3.0/"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
   depends_on formula: "git"
   depends_on formula: "tmux"
   depends_on formula: "cloudflared"
