@@ -1,6 +1,6 @@
 cask "dev3" do
-  version "1.21.2"
-  sha256 "107049519b1ba29ce372c7e061f5f68ddab80c6c1f8cab44afe87ef62b3af55c"
+  version "1.22.0"
+  sha256 "ebe9782ee92fa8fd326efa5bc8bf6fc626a57f996be8f28c5548f7cda97f55a0"
 
   url "https://github.com/h0x91b/dev-3.0/releases/download/v#{version}/stable-macos-arm64-dev-3.0.dmg"
   name "dev-3.0"
@@ -8,7 +8,7 @@ cask "dev3" do
   homepage "https://h0x91b.github.io/dev-3.0/"
 
   depends_on arch: :arm64
-  depends_on macos: :ventura
+  depends_on macos: ">= :ventura"
   depends_on formula: "git"
   depends_on formula: "tmux"
   depends_on formula: "cloudflared"
