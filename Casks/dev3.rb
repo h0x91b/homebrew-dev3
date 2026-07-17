@@ -1,6 +1,6 @@
 cask "dev3" do
-  version "1.35.2"
-  sha256 "3b33f2a8d99037a4b53c710682b653114f2f0605c256720883dae9b47c2391f8"
+  version "1.36.0"
+  sha256 "f996b18599a8ed480ab32273263337587c6a4e631a5953e6ad43904add431577"
 
   url "https://github.com/h0x91b/dev-3.0/releases/download/v#{version}/stable-macos-arm64-dev-3.0.dmg"
   name "dev-3.0"
@@ -17,11 +17,10 @@ cask "dev3" do
   depends_on arch: :arm64
   depends_on macos: :ventura
   depends_on formula: "git"
-  # Pinned keg-only tmux from this tap: tmux 3.7 regressed (client
-  # busy-spins on a congested server socket). The app prefers the
-  # /opt/homebrew/opt/tmux@3.6 keg and shims it into agent PATHs,
-  # so it does not need to be linked.
-  depends_on formula: "h0x91b/dev3/tmux@3.6"
+  # No tmux dependency: the app bundle ships its own self-contained
+  # pinned tmux (Resources/app/tmux) — see decisions/137. Existing
+  # installs with the h0x91b/dev3/tmux@3.6 keg keep working (the keg
+  # is the second resolution tier after the bundled binary).
   depends_on formula: "cloudflared"
 
   app "dev-3.0.app"
