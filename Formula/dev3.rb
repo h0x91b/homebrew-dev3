@@ -1,33 +1,33 @@
 class Dev3 < Formula
   desc "Terminal-centric project manager for AI coding agents (CLI + headless)"
   homepage "https://h0x91b.github.io/dev-3.0/"
-  version "1.42.0"
+  version "1.42.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.0/dev3-cli-macos-arm64.tar.gz"
-      sha256 "515187c0ce0e198c5d5233172500f26203ae66d7043d91728b7276df6e48946a"
+      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.1/dev3-cli-macos-arm64.tar.gz"
+      sha256 "51c775095a0b3044bec02592686b78c3da7b603fdb960976c503f2c7c686168b"
     end
     on_intel do
-      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.0/dev3-cli-macos-x64.tar.gz"
-      sha256 "f521937c315c3b36731b0934919da7c52775da60e4881830c5b83a894c9b3392"
+      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.1/dev3-cli-macos-x64.tar.gz"
+      sha256 "93d8005446444333b4f7e5b3ff2086f89f1954b6340d43959e9dfeb6cf77abc0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.0/dev3-cli-linux-x64.tar.gz"
-      sha256 "1fb49033ca367690fe5f3c1d231a97a0de821a3042a1a8d5bb785b698846adae"
+      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.1/dev3-cli-linux-x64.tar.gz"
+      sha256 "10abe5ae4fe42badb4e69db583111c783f9f2a6037e98f42e281be2448ebd061"
     end
     on_arm do
-        url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.0/dev3-cli-linux-arm64.tar.gz"
-        sha256 "defdb7c5de361b5d466b4acf5cb8ed158b2e8364777bf0c8db5386e66623cb67"
+        url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.42.1/dev3-cli-linux-arm64.tar.gz"
+        sha256 "6ecde8b0bf5a3e31d0dc23c2250944f2026177632d3f45e33e67d8ca9cfc7b74"
       end
   end
 
   # No tmux dependency on macOS: the tarball ships a self-contained
-  # pinned tmux next to the binary (decisions/137). Linux tarballs
+  # pinned tmux next to the binary (decisions/2026/07/16/bundle-tmux-macos.md). Linux tarballs
   # don't carry it yet, so Linux keeps the pinned keg — without it a
   # fresh Linux install on a tmux-less box would have no tmux at all.
   on_linux do
