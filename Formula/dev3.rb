@@ -1,28 +1,28 @@
 class Dev3 < Formula
   desc "Terminal-centric project manager for AI coding agents (CLI + headless)"
   homepage "https://h0x91b.github.io/dev-3.0/"
-  version "1.43.0"
+  version "1.44.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.43.0/dev3-cli-macos-arm64.tar.gz"
-      sha256 "5d6e2018f8431c81cf7e3d7a2db835f654711368bc395cf6015e833abb421ef8"
+      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.44.0/dev3-cli-macos-arm64.tar.gz"
+      sha256 "c4f065636d2ba35aa0b09e1716a64a249c611e405ba0aeb4f6191a6a69ac2c69"
     end
     on_intel do
-      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.43.0/dev3-cli-macos-x64.tar.gz"
-      sha256 "8a7a368514b5a87485c2e517fb7b01572220e1f9703a7f3d64512ceb70c602b3"
+      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.44.0/dev3-cli-macos-x64.tar.gz"
+      sha256 "f76e691b17bb9ff6238a47cee0525546f96a87652232ab019bdc1909537eac21"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.43.0/dev3-cli-linux-x64.tar.gz"
-      sha256 "9493f3825c1e44c66c9b0054d7550dbbd5f81bdda44173e96184c1d228ba79de"
+      url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.44.0/dev3-cli-linux-x64.tar.gz"
+      sha256 "00c682a6045550e300ac8cd41200bccfbb57ee643f0a8944e536e6aa94f2540c"
     end
     on_arm do
-        url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.43.0/dev3-cli-linux-arm64.tar.gz"
-        sha256 "5619bacb87553ac3e46c2e259a579a1007893aa73bebc6119838d6f083e33392"
+        url "https://h0x91b-releases.s3.eu-west-1.amazonaws.com/dev-3.0/v1.44.0/dev3-cli-linux-arm64.tar.gz"
+        sha256 "1323b9bfdcc5577e7f72234f4c61c262d3347b26f903f7f19e9b29efe31db687"
       end
   end
 
