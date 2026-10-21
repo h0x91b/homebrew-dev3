@@ -1,6 +1,6 @@
 cask "dev3" do
-  version "1.58.0"
-  sha256 "e012906021fbf84e626d607e7276e3b2a9d6a5eba4b5491bbf5d4f0ecc28090f"
+  version "1.60.0"
+  sha256 "0b4995a1040db15a0d1a5abe4b1a5b6af53ef1e707b03a5f68cd9661aff03946"
 
   url "https://github.com/h0x91b/dev-3.0/releases/download/v#{version}/stable-macos-arm64-dev-3.0.dmg"
   name "dev-3.0"
